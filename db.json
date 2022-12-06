@@ -1,0 +1,46 @@
+{
+  "daftarBuku": [
+    {
+      "judul": "Keong Mas",
+      "deskripsi": "Keong Ajaib",
+      "pengarang": "Bapak Futton",
+      "tahunTerbit": "2022-12-14",
+      "id": 2
+    },
+    {
+      "judul": "judul",
+      "deskripsi": "deskripsi",
+      "tahunTerbit": "tahunTerbit",
+      "pengarang": "pengarang",
+      "id": 3
+    },
+    {
+      "judul": "ppppp",
+      "deskripsi": "pppppp",
+      "tahunTerbit": "2022-12-30",
+      "pengarang": "pppppp",
+      "id": 7
+    },
+    {
+      "judul": "ppppp",
+      "deskripsi": "pppppp",
+      "tahunTerbit": "2022-12-16",
+      "pengarang": "pppppp",
+      "id": 8
+    },
+    {
+      "judul": "ppppppp",
+      "deskripsi": "papa",
+      "pengarang": "pppppppppppppppp",
+      "tahunTerbit": "2022-12-00",
+      "id": 9
+    },
+    {
+      "judul": "ooo",
+      "deskripsi": "oooooooo",
+      "tahunTerbit": "2022-12-22",
+      "pengarang": "oooooooo",
+      "id": 10
+    }
+  ]
+}

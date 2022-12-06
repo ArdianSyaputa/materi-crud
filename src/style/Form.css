@@ -1,0 +1,13 @@
+form {
+    text-align: left ;
+    border: 1px solid;
+    padding: 10px;
+}
+.input {
+    margin-bottom: 5px;
+}
+
+.daftar{
+    margin-left: 50px;
+    margin-right: 50px;
+}
