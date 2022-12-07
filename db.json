@@ -1,46 +1,18 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "Ard",
+      "password": "123"
+    }
+  ],
   "daftarBuku": [
     {
-      "judul": "Keong Mas",
-      "deskripsi": "Keong Ajaib",
-      "pengarang": "Bapak Futton",
-      "tahunTerbit": "2022-12-14",
-      "id": 2
-    },
-    {
-      "judul": "judul",
-      "deskripsi": "deskripsi",
-      "tahunTerbit": "tahunTerbit",
-      "pengarang": "pengarang",
-      "id": 3
-    },
-    {
-      "judul": "ppppp",
-      "deskripsi": "pppppp",
-      "tahunTerbit": "2022-12-30",
-      "pengarang": "pppppp",
-      "id": 7
-    },
-    {
-      "judul": "ppppp",
-      "deskripsi": "pppppp",
-      "tahunTerbit": "2022-12-16",
-      "pengarang": "pppppp",
-      "id": 8
-    },
-    {
-      "judul": "sefd",
-      "deskripsi": "ererw",
-      "tahunTerbit": "2022-12-23",
-      "pengarang": "eee",
-      "id": 9
-    },
-    {
-      "judul": "ygrg",
-      "deskripsi": "y6tuytuu6yu",
-      "tahunTerbit": "2022-12-04",
-      "pengarang": "87i78i",
-      "id": 10
+      "judul": "xzaazxzaxs",
+      "deskripsi": "azxzaxza",
+      "pengarang": "sxasxdazxszasx",
+      "tahunTerbit": "2022-12-22",
+      "id": 1
     }
   ]
 }

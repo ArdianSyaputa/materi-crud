@@ -3,6 +3,8 @@ import { InputGroup, Form } from "react-bootstrap";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import "../style/pages.css";
+import Swal from 'sweetalert2'
+
 // method untuk membaca sistem dan bisa di ubah melalui input
 export default function Edit() {
   const param = useParams();
@@ -27,22 +29,44 @@ export default function Edit() {
 
   const submitActionHandler = async (event) => {
     event.preventDefault();
-
-    await axios
-      .put("http://localhost:8000/daftarBuku/" + param.id, {
-        judul: judul,
-        deskripsi: deskripsi,
-        pengarang: pengarang,
-        tahunTerbit: tahunTerbit,
-      })
+    await
+    Swal.fire({
+      title: 'Yakin Untuk Mengedit',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yaa!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axios
+        .put("http://localhost:8000/daftarBuku/" + param.id, {
+          judul: judul,
+          deskripsi: deskripsi,
+          pengarang: pengarang,
+          tahunTerbit: tahunTerbit,
+        })
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
       .then(() => {
-        alert("Berhasil Mengubah Data");
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+          )
         history.push("/");
       })
       .catch((error) => {
         alert("Terjadi Kesalahan" + error);
       });
   };
+  
   return (
     <div className="edit mx-5">
       <Form onSubmit={submitActionHandler}>

@@ -8,7 +8,9 @@
   pointer-events: none;
 }
 
-
+.swal2-actions{
+  gap: 10px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
