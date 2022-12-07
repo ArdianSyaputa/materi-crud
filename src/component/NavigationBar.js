@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Nav, Navbar, NavDropdown, Modal, Button, Form } from "react-bootstrap";
 import axios from "axios";
 
+// method untuk menambahkan data ke db.json
 export default function NavigationBar() {
   const [show, setShow] = useState(false);
   const [judul, setJudul] = useState("");
@@ -9,6 +10,7 @@ export default function NavigationBar() {
   const [tahunTerbit, setTahunTerbit] = useState("");
   const [pengarang, setPengarang] = useState("");
 
+  // Method untuk menampilkan modal bootstrap dan menghilangkan setelah input data
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -55,6 +57,7 @@ export default function NavigationBar() {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
+            {/* untuk memunculkan */}
               <button className="btn" onClick={handleShow}>
                 Tambah Buku
               </button>
@@ -65,7 +68,7 @@ export default function NavigationBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+{/* di panggil agar bisa muncul dan hilang */}
       <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Tambah Buku</Modal.Title>
@@ -108,6 +111,7 @@ export default function NavigationBar() {
                 onChange={(e) => setPengarang(e.target.value)}
                 required />
             </Form.Group>
+            {/* Untuk menghilangkan model */}
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>

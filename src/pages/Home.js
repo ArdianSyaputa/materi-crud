@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
-
+// method yang berfungsi get/menampilkan melalui db.json yang di buat
+// ada method untuk delte data melalui id yang di baca oleh sistem
 export default function Home() {
     const [buku, setBuku] = useState([]);
 
@@ -48,6 +49,7 @@ export default function Home() {
                 <td>{book.tahunTerbit}</td>
                 <td>{book.pengarang}</td>
                 <td>
+                  {/* on Click Agar button delete berfungsi */}
                   <Button
                     variant="danger"
                     className="mx-1"
@@ -55,6 +57,7 @@ export default function Home() {
                   >
                     Hapus
                   </Button>
+                  {/* berfungsi untuk mengarahkan page edit */}
                   <a href={"/edit/" + book.id}>
                     <Button variant="warning" className="mx-1">
                       Ubah

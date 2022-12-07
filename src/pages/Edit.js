@@ -3,7 +3,7 @@ import { InputGroup, Form } from "react-bootstrap";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import "../style/pages.css";
-
+// method untuk membaca sistem dan bisa di ubah melalui input
 export default function Edit() {
   const param = useParams();
   const [judul, setJudul] = useState("");
@@ -103,6 +103,7 @@ export default function Edit() {
           </div>
         </div>
         <div className="d-flex justify-content-end align-center mt-2">
+          {/* type submit untuk sistem yang telah membaca method bahwa berupa edit */}
           <button className="buton btn" type="submit">
             Save
           </button>
